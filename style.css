@@ -1,0 +1,93 @@
+/*Default styles*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.heading{
+    color:white;
+    background-color: #081b31;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.choices{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:3rem; /*Give extra gap*/
+    margin-top: 5rem;
+}
+
+.choice {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*Styles after hovering over any choice button*/
+
+.choice :hover {
+    background-color: #081b31;
+    cursor: pointer;
+    border: 5px solid black;
+    opacity: 0.8;
+}
+
+.score-board {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    font-size: 2rem;
+}
+
+.user, .comp{
+    text-align: center;
+    margin: 1rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    text-align:center;
+    margin-top: 3.5rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    margin-top: 5px;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.box{
+    text-align: center;
+}
+
+.label{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
