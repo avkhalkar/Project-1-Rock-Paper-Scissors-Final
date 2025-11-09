@@ -5,7 +5,6 @@
     margin: 0;
 }
 
-
 .heading{
     color:white;
     background-color: #081b31;
@@ -14,11 +13,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom:10px;
+    width:100%;
 }
 
 .choices{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap:3rem; /*Give extra gap*/
     margin-top: 5rem;
@@ -90,4 +90,22 @@ img{
     margin-top: 20px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+/*Responsiveness*/
+
+@media (max-width:500px) {
+   .choices {
+        flex-wrap: wrap;
+   }
+   #msg{
+        height: 80%;
+        display: inline-block;
+        align-items: center;
+        align-content: center;
+        line-height: 40px;
+   }
+   .msg-container{
+        height: 100px;
+   }
 }
